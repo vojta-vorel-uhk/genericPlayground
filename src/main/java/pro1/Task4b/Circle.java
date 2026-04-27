@@ -1,10 +1,17 @@
 package pro1.Task4b;
 
-public class Circle
+public class Circle<T extends Number>
 {
-    public Circle(Object radius) {
+    private T radius;
+    public Circle(T radius) {
+        this.radius = radius;
+    }
+    public T getRadius(){
+        return radius;
     }
     public double getArea() {
-        return 0;
+        return Math.PI
+                * radius.doubleValue()
+                * radius.doubleValue();
     }
 }

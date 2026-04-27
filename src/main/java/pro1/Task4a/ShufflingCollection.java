@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class ShufflingCollection
+public class ShufflingCollection<T>
 {
-    private List<Object> content;
+    private List<T> content;
     private Random random = new Random();
-    public ShufflingCollection(List<Object> content) {
+    public ShufflingCollection(List<T> content) {
         this.content = new ArrayList<>(content);
     }
 
-    public Object get(int index)
+    public T get(int index)
     {
         return content.get(index);
     }

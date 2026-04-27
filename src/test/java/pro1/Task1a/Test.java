@@ -19,6 +19,7 @@ public class Test
                 c.addAndGet(data.length);
                 return "DONE";
             };
+            task.call();
         }
 
         // TODO: doplň tak, aby všechna data byla stažena

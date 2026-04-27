@@ -6,9 +6,9 @@ public class Test
 {
     @org.junit.Test
     public void test01() throws Exception {
-        var k1 = new Circle(5);
-        var k2 = new Circle(5.8f);
-        var k3 = new Circle(5.8d);
+        var k1 = new Circle<Integer>(5);
+        var k2 = new Circle<Float>(5.8f);
+        var k3 = new Circle<Double>(5.8d);
 
         // TODO: Doplň třídu Circle podobně jako FloatCircle.
         //       Třída Circle musí umět uchovat hodnotu radius jako integer, float,

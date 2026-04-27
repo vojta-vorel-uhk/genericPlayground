@@ -1,6 +1,7 @@
 package pro1.Task6;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class Test
 {
@@ -10,6 +11,10 @@ public class Test
         assertEquals(
                 5,
                 new Resistor(10).getCurrent(50)
+        );
+        assertThrows(
+                ResistorException.class,
+                ()->new Resistor(10).getCurrent(Double.POSITIVE_INFINITY)
         );
 
         // TODO 1: doplň třídu Resistor tak, aby vyhazovala speciální druh výjimky
